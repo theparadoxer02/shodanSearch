@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: censys
+Version: 0.0.6
+Summary: Python library for interacting with Censys Search Engine (censys.io)
+Home-page: https://github.com/censys/censys-python
+Author: Censys Team
+Author-email: team@censys.io
+License: Apache License, Version 2.0
+Description: Python library for interacting with Censys Search Engine (censys.io)
+Keywords: censys
+Platform: UNKNOWN
+Classifier: Programming Language :: Python

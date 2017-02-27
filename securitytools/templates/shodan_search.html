@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}
+Shodan search
+{% endblock %}
+
+{% block content %}
+	<div class = "container">
+		<div class="row">
+			<div class="col-md-3 jumbotron">
+				<b style="text-align: left;">This is the tool made by shodan api that takes input and output the matching ips</b>
+			</div>
+			<div class = "col-md-9"
+				<form method="POST" action="">
+					{% csrf_token %}
+					{{ form }}
+					Search On Shodan :<input type="text" name="q" id="id_q" value="{{ query }}"/>
+					  <input type="submit" value="Search" />
+					</form>
+				<br>
+				{{ subtitle }}
+				<div class = "result">
+					{% for ip in IPS %}
+						<br> {{ ip }} <br/>
+					{% endfor %}
+
+					<!-- <div class="pagination">
+					    <span class="step-links">
+					        {% if IPS.has_previous %}
+					            <a href="?page={{ IPS.previous_page_number }}">previous</a>
+					        {% endif %}
+
+					        <span class="current">
+					            Page {{ IPS.number }} of {{ IPS.paginator.num_pages }}.
+					        </span>
+
+					        {% if IPS.has_next %}
+					            <a href="?page={{ IPS.next_page_number }}">next</a>
+					        {% endif %}
+					    </span>
+
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+<style>
+	.result{
+		text-align: left;
+	}
+</style>
+
+
+{% endblock %}

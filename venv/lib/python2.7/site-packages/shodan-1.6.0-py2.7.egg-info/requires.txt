@@ -1,0 +1,5 @@
+simplejson
+requests>=2.2.1
+click
+click-plugins
+colorama

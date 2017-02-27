@@ -1,0 +1,4 @@
+django==1.9
+shodan
+django-crispy-forms==1.4.0
+django-registration-redux==1.1

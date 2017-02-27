@@ -1,0 +1,3 @@
+[console_scripts]
+censys = censys.__main__:main
+

@@ -1,0 +1,10 @@
+#!/home/abhi/workarea/shodan/venv/bin/python2
+# EASY-INSTALL-ENTRY-SCRIPT: 'censys==0.0.6','console_scripts','censys'
+__requires__ = 'censys==0.0.6'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('censys==0.0.6', 'console_scripts', 'censys')()
+    )
